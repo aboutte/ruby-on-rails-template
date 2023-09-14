@@ -1,0 +1,7 @@
+<!-- app/views/customers/index.html.erb -->
+<h1>Customers</h1>
+<ul>
+  <% @customers.each do |customer| %>
+    <li><%= customer.first_name %> <%= customer.last_name %> - <%= customer.email %></li>
+  <% end %>
+</ul>
